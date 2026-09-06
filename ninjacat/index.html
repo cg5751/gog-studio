@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ninja Cat — GOG Studio</title>
+<meta name="description" content="A vertical arcade climber with two inputs and one number. Hand-drawn pixel art. On Steam for PC, coming to Android.">
+<meta property="og:title" content="Ninja Cat">
+<meta property="og:description" content="A vertical arcade climber with two inputs and one number. Hand-drawn pixel art. On Steam for PC, coming to Android.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cg5751.github.io/gog-studio/ninjacat/">
+<style>
+:root{
+  --bg:#ffffff;
+  --fg:#1a1a1a;
+  --muted:#666666;
+  --rule:#e2e2e2;
+  --accent:#2b6cb0;
+  --card:#f7f7f8;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#16181c;
+    --fg:#e8e8ea;
+    --muted:#9a9aa2;
+    --rule:#2c2f36;
+    --accent:#7fb3e8;
+    --card:#1e2127;
+  }
+}
+body{
+  background:var(--bg);
+  color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR","Malgun Gothic",Roboto,Helvetica,Arial,sans-serif;
+  font-size:16px;
+  line-height:1.75;
+  margin:0;
+  padding:2.5rem 1.25rem 4rem;
+}
+main{max-width:46rem;margin:0 auto}
+h1{font-size:2rem;margin:0 0 .25rem}
+h2{font-size:1.25rem;margin-top:2.5rem;padding-top:1.25rem;border-top:1px solid var(--rule)}
+a{color:var(--accent)}
+p{margin:0 0 1rem}
+.meta{color:var(--muted);font-size:.9rem;margin:0 0 2rem}
+.lede{background:var(--card);border-radius:8px;padding:1.25rem 1.5rem;margin:0 0 1rem}
+
+.platforms{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1.25rem}
+.platform{
+  flex:1 1 16rem;
+  background:var(--card);
+  border-radius:8px;
+  padding:1.25rem 1.5rem;
+}
+.platform h3{margin:0 0 .1rem;font-size:1.05rem}
+.platform .tag{color:var(--muted);font-size:.85rem;display:block;margin-bottom:.7rem}
+.platform p{margin:0 0 .75rem;font-size:.95rem}
+.platform p:last-child{margin-bottom:0}
+.platform .status{color:var(--muted)}
+
+table{width:100%;border-collapse:collapse;margin-top:1rem}
+th,td{text-align:left;padding:.55rem .5rem;border-bottom:1px solid var(--rule);font-size:.95rem}
+th{color:var(--muted);font-weight:600;width:12rem}
+
+ul{padding-left:1.25rem;margin:0}
+li{margin:.35rem 0}
+
+footer{margin-top:3.5rem;padding-top:1.25rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.9rem}
+footer a{margin-right:1rem}
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Ninja Cat</h1>
+  <p class="meta">by GOG Studio</p>
+
+  <div class="lede">
+    A vertical arcade climber built around two inputs and one number.
+    A ninja cat leaps between trees, dodging enemy ninjas and traps on the way up.
+    Your score is the height you reach, in meters — nothing else.
+  </div>
+
+  <h2>Where to Play</h2>
+
+  <div class="platforms">
+
+    <div class="platform">
+      <h3>Steam</h3>
+      <span class="tag">Windows PC</span>
+      <p>The desktop release. Full screen, same climb.</p>
+      <p><a href="https://store.steampowered.com/app/5045900/Ninja_Cat/">View on Steam &rarr;</a></p>
+    </div>
+
+    <div class="platform">
+      <h3>Google Play</h3>
+      <span class="tag">Android</span>
+      <p>Built for one hand in portrait, with leaderboards through Play Games Services.</p>
+      <p class="status">Coming soon</p>
+    </div>
+
+  </div>
+
+  <h2>How to Play</h2>
+
+  <table>
+    <tr>
+      <th>One input</th>
+      <td>Jump to the tree on the opposite side.</td>
+    </tr>
+    <tr>
+      <th>A second, in mid-air</th>
+      <td>Double jump and change direction.</td>
+    </tr>
+    <tr>
+      <th>Score</th>
+      <td>The height you climbed, in meters.</td>
+    </tr>
+  </table>
+
+  <p style="margin-top:1rem">
+    That is the entire control scheme. The difficulty comes from what is
+    falling, throwing, and waiting above you.
+  </p>
+
+  <h2>Features</h2>
+  <ul>
+    <li>Hand-drawn pixel art, made by one person</li>
+    <li>Portrait, one-handed play on mobile</li>
+    <li>Leaderboards — your own record first, then everyone else's</li>
+    <li>No in-app purchases. The Android version has optional rewarded ads only</li>
+  </ul>
+
+  <h2>About GOG Studio</h2>
+  <p>
+    A one-person game studio. The art, the code and the store pages are all made
+    by a single developer shipping small arcade games.
+  </p>
+
+  <footer>
+    <a href="./privacy.html">Privacy Policy (Steam)</a>
+    <a href="./privacy-android.html">Privacy Policy (Android)</a><br>
+    Contact: gogstudio210327@gmail.com
+  </footer>
+
+</main>
+</body>
+</html>
